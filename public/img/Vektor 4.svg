@@ -1,0 +1,20 @@
+<svg width="50" height="46" viewBox="0 0 50 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Clip path group">
+<mask id="mask0_251_1389" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="50" height="47">
+<g id="clip0_104_157">
+<path id="Vector" d="M50 0.0537109H0V46.0076H50V0.0537109Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0_251_1389)">
+<g id="Group">
+<path id="Vector_2" fill-rule="evenodd" clip-rule="evenodd" d="M25 46.0076C38.807 46.0076 50 35.7203 50 23.0306C50 10.3408 38.807 0.0537109 25 0.0537109C11.1929 0.0537109 0 10.3408 0 23.0306C0 35.7203 11.1929 46.0076 25 46.0076ZM25 33.083C31.0405 33.083 35.9375 28.5823 35.9375 23.0306C35.9375 17.4788 31.0405 12.9782 25 12.9782C18.9594 12.9782 14.0625 17.4788 14.0625 23.0306C14.0625 28.5823 18.9594 33.083 25 33.083Z" fill="url(#paint0_linear_251_1389)"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_251_1389" x1="5.125" y1="3.73002" x2="22.3339" y2="47.0663" gradientUnits="userSpaceOnUse">
+<stop stop-color="#253EA7"/>
+<stop offset="1" stop-color="#C2D6FF"/>
+</linearGradient>
+</defs>
+</svg>
