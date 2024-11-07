@@ -236,7 +236,7 @@
         <!-- Navbar -->
         <div class="fixed z-50 flex min-w-full h-20 px-4 sm:px-16 bg-slate-950">
             <div class="w-full flex items-center justify-between relative sm:static">
-                <a href="">
+                <a href="/">
                     <img src="./img/logo-saestu-04-1.png" class="w-24 sm:w-32" alt="">
                 </a>
                 <input type="checkbox" id="menu-toggle" class="hidden peer" />
@@ -244,8 +244,8 @@
                     class="sm:flex w-full sm:w-fit rounded-lg flex-col sm:flex-row items-center text-white gap-4 sm:gap-8 absolute right-0 top-20 bg-slate-900 sm:bg-transparent sm:static px-8 py-2 sm:p-0 hidden peer-checked:flex">
                     <a href="/" class="group">
                         <div class="flex flex-col">
-                            <p class="group-hover:text-orange-500 transition-all">Home</p>
-                            <div class="w-full h-[2px] mt-1 bg-transparent group-hover:bg-orange-500 transition-all">
+                            <p class="text-orange-500 transition-all">Home</p>
+                            <div class="w-full h-[2px] mt-1 bg-orange-500 transition-all">
                             </div>
                         </div>
                     </a>
@@ -256,21 +256,21 @@
                             </div>
                         </div>
                     </a>
-                    <a href="./project.html" class="group">
+                    <a href="/project" class="group">
                         <div class="flex flex-col">
                             <p class="group-hover:text-orange-500 transition-all">Project</p>
                             <div class="w-full h-[2px] mt-1 bg-transparent group-hover:bg-orange-500 transition-all">
                             </div>
                         </div>
                     </a>
-                    <a href="./services.html" class="group">
+                    <a href="/services" class="group">
                         <div class="flex flex-col">
                             <p class="group-hover:text-orange-500 transition-all">Service</p>
                             <div class="w-full h-[2px] mt-1 bg-transparent group-hover:bg-orange-500 transition-all">
                             </div>
                         </div>
                     </a>
-                    <a href="./lets-talk.html" class="group">
+                    <a href="/lets-talk" class="group">
                         <div class="flex flex-col">
                             <p class="group-hover:text-orange-500 transition-all">Let's Talk</p>
                             <div class="w-full h-[2px] mt-1 bg-transparent group-hover:bg-orange-500 transition-all">

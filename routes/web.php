@@ -10,6 +10,15 @@ Route::get('/about-us', function () {
     return view('about-us');
 });
 
-Route::get('/welcome', function () {
-    return view('welcome');
+Route::get('/project', function () {
+    return view('project');
 });
+
+Route::get('/services', function () {
+    return view('services');
+});
+
+Route::get('/lets-talk', function () {
+    return view('lets-talk');
+});
+
