@@ -389,7 +389,7 @@
                         <p class="text-[14px] font-medium mt-1">HO Jogja :</p>
                         <p class="text-[14px]">Jl. Lempongsari Raya No.144-89, Randuguang, Sariharjo, Ngaglik, Sleman,
                             Daerah Istimewa Yogyakarta 55581</p>
-                        <p class="text-[14px] font-medium mt-1">HO Jakarta :</p>
+                        <p class="text-[14px] font-medium mt-1">RO Jakarta :</p>
                         <p class="text-[14px]">Jl. Mampang Prpt. Raya No.73A, RT.10/RW.2, Tegal Parang, Mampang
                             Prapatan, South Jakarta City, Jakarta 12790</p>
                     </div>

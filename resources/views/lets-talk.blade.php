@@ -81,8 +81,6 @@
             </div>
         </div>
         <!-- Navbar -->
-
-        <!-- Content -->
         <div class="flex mt-20 flex-col sm:flex-row flex-wrap justify-between bg-slate-950 min-w-full p-4 sm:p-16"
             data-aos="fade-up">
             <div class="w-full flex  justify-center">
@@ -109,68 +107,112 @@
             </div>
 
             <div class="flex w-full sm:flex-col sm:w-1/2 justify-between py-8">
-                <form action="/submit-form" method="POST" class="max-w-lg mx-auto p-6 ">
-                    <div class="flex gap-4">
-                        <div class="mb-4">
-                            <label for="nama" class="block mb-2"></label>
+                <form action="/submit-form" method="POST" class="w-full max-w-lg p-4 text-white rounded-lg ">
+                    <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+                        <div>
                             <input type="text" id="nama" name="nama" placeholder="Nama"
-                                class="w-full px-3 py-2 placeholder-white bg-slate-950 text-white border border-white rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
+                                class="w-full p-2 text-white bg-slate-950 border-white rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
                                 required>
                         </div>
-
-                        <div class="mb-4">
-                            <label for="kontak-wa" class="block mb-2"></label>
-                            <input type="tel" id="kontak-wa" name="kontak-wa" pattern="[0-9]{10,15}"
-                                placeholder="Kontak WA"
-                                class="w-full px-3 py-2 bg-slate-950 text-white placeholder-white border border-white rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
+                        <div>
+                            <input type="tel" id="kontak-wa" name="kontak-wa" placeholder="Kontak WA"
+                                pattern="[0-9]{10,15}"
+                                class="w-full p-2 text-white bg-slate-950 border-white rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
                                 required>
                         </div>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div class="mb-4">
-                            <label for="email" class="block text-gray-700 font-medium mb-2"></label>
+                        <div>
                             <input type="email" id="email" name="email" placeholder="Email"
-                                class="w-full px-3 py-2 bg-slate-950 text-white placeholder-white border border-white rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
+                                class="w-full p-2 text-white bg-slate-950 border-white rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
                                 required>
                         </div>
-
-                        <div class="mb-4">
-                            <label for="perusahaan" class="block text-gray-700 font-medium mb-2"></label>
+                        <div>
                             <input type="text" id="perusahaan" name="perusahaan" placeholder="Perusahaan"
-                                class="w-full px-3 py-2 bg-slate-950 text-white placeholder-white border border-white rounded focus:outline-none focus:ring-2 focus:ring-orange-500">
+                                class="w-full p-2 text-white bg-slate-950 border-white rounded focus:outline-none focus:ring-2 focus:ring-orange-500">
+                        </div>
+                        <div class="col-span-1 md:col-span-2">
+                            <select id="kebutuhan-layanan" name="kebutuhan-layanan"
+                                class="w-full p-2 text-white bg-slate-950 border-white rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
+                                required>
+                                <option value="">--Pilih Layanan--</option>
+                                <option value="Brand Development">Brand Development</option>
+                                <option value="Digital Marketing & Development">Digital Marketing & Development
+                                </option>
+                                <option value="Communication & Marketing Strategy">Communication & Marketing
+                                    Strategy
+                                </option>
+                                <option value="MICE">MICE</option>
+                            </select>
                         </div>
 
-                    </div>
+                        <!-- Opsi tambahan untuk Brand Development -->
+                        <div class="col-span-1 md:col-span-2" id="brand-options" style="display: none;">
+                            <select id="brand-options-select" name="brand-options"
+                                class="w-full p-2 text-white bg-slate-950 border-white rounded focus:outline-none focus:ring-2 focus:ring-orange-500">
+                                <option value="">--Pilih Opsi--</option>
+                                <option value="Brand Srategy">Brand Srategy</option>
+                                <option value="Brand Identity">Brand Identity</option>
+                                <option value="Brand Collaterals">Brand Collaterals</option>
+                                <option value="Brand Guideline">Brand Guideline</option>
+                                <option value="Brand Naming">Brand Naming</option>
+                                <option value="Print & Packaging">Print & Packaging</option>
+                            </select>
+                        </div>
 
-                    <div class="mb-4">
-                        <label for="kebutuhan-layanan" class="block text-gray-700 font-medium mb-2"></label>
-                        <select id="kebutuhan-layanan" name="kebutuhan-layanan"
-                            class="w-full px-3 py-2 bg-slate-950 text-white  border-white rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
-                            required>
-                            <option value="" class="text-white">--Pilih Layanan--</option>
-                            <option value="konsultasi">Konsultasi</option>
-                            <option value="pengembangan-website">Pengembangan Website</option>
-                            <option value="digital-marketing">Digital Marketing</option>
-                            <option value="desain-grafis">Desain Grafis</option>
-                        </select>
-                    </div>
+                        <!-- Opsi tambahan untuk Digital Marketing & Development -->
+                        <div class="col-span-1 md:col-span-2" id="digital-options" style="display: none;">
+                            <select id="digital-options-select" name="digital-options"
+                                class="w-full p-2 text-white bg-slate-950 border-white rounded focus:outline-none focus:ring-2 focus:ring-orange-500">
+                                <option value="">--Pilih Opsi--</option>
+                                <option value="SEO & SEM">SEO & SEM</option>
+                                <option value="Sosial Media Management">Sosial Media Management</option>
+                                <option value="Influencer/KOL Management">Influencer / KOL Management</option>
+                                <option value="Social Media Ads">Social Media Ads</option>
+                                <option value="Digital Campaign">Digital Campaign</option>
+                                <option value="Content">Content</option>
+                                <option value="Creation/Production">Creation/Production</option>
+                            </select>
+                        </div>
 
-                    <div class="mb-4">
-                        <label for="note" class="block text-gray-700 font-medium mb-2"></label>
-                        <textarea id="note" name="note" rows="4" placeholder="Tambahkan catatan jika diperlukan"
-                            class="w-full px-3 py-2 bg-slate-950 text-white placeholder-white border border-white rounded focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-                    </div>
+                        <!-- Opsi tambahan untuk Communication & Marketing Strategy -->
+                        <div class="col-span-1 md:col-span-2" id="marketing-options" style="display: none;">
+                            <select id="marketing-options-select" name="marketing-options"
+                                class="w-full p-2 text-white bg-slate-950 border-white rounded focus:outline-none focus:ring-2 focus:ring-orange-500">
+                                <option value="">--Pilih Opsi--</option>
+                                <option value="Brand Activation">Brand Activation</option>
+                                <option value="Statagic Planning">Statagic Planning</option>
+                                <option value="Live Streaming/Broadcastig">Live Streaming / Broadcastig</option>
+                                <option value="TV Ads, Print, Radio">TV Ads, Print, Radio</option>
+                                <option value="Marketing Campaign">Marketing Campaign</option>
+                                <option value="Strategic Copywriting">Strategic Copywriting</option>
+                                <option value="Online / Offine / Hybrid Event">Online / Offine / Hybrid Event</option>
+                                <option value="Planning">Planning</option>
+                            </select>
+                        </div>
 
-                    <div class="text-center">
-                        <button type="submit"
-                            class="px-4 py-2 bg-white font-medium rounded-lg hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500">
-                            Kirim
-                        </button>
+                        <!-- Opsi tambahan untuk MICE -->
+                        <div class="col-span-1 md:col-span-2" id="mice-options" style="display: none;">
+                            <select id="mice-options-select" name="mice-options"
+                                class="w-full p-2 text-white bg-slate-950 border-white rounded focus:outline-none focus:ring-2 focus:ring-orange-500">
+                                <option value="">--Pilih Opsi--</option>
+                                <option value="Meeting">Meeting</option>
+                                <option value="Seminar">Seminar</option>
+                                <option value="Workshop">Workshop</option>
+                                <option value="Gathering">Gathering</option>
+                                <option value="Gala Dinner">Gala Dinner</option>
+                                <option value="Exhibition">Exhibition</option>
+                            </select>
+                        </div>
+
+                        <div class="col-span-1 md:col-span-2">
+                            <textarea id="note" name="note" rows="4" placeholder="Tambahkan catatan jika diperlukan"
+                                class="w-full p-2 text-white bg-slate-950 border-white rounded focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
+                        </div>
+                        <div class="col-span-1 md:col-span-2">
+                            <button type="submit"
+                                class="w-full p-2 font-semibold text-black bg-white rounded hover:bg-orange-500">Kirim</button>
+                        </div>
                     </div>
                 </form>
-
-
             </div>
         </div>
 
@@ -181,7 +223,8 @@
         <div style="background-image: url(img/anbwh.gif);"
             class="flex flex-col w-full h-[300px] sm:h-[600px] bg-no-repeat bg-cover p-8 justify-center items-center"
             data-aos="fade-up">
-            <p class="text-[24px] sm:text-[44px] text-white mt-2 sm:mt-8 text-center font-bold">Join us in bringing your
+            <p class="text-[24px] sm:text-[44px] text-white mt-2 sm:mt-8 text-center font-bold">Join us in bringing
+                your
                 brand's story to life with precision and passion.</p>
             <a href="#"
                 class="inline-block w-fit text-[12px] sm:text-lg text-black text-center bg-white border px-2 py-1">
@@ -196,26 +239,26 @@
         <!-- Footer -->
         <div class="flex flex-col sm:flex-row sm:flex-wrap gap-y-4 min-w-full p-4 sm:px-16 bg-neutral-200"
             data-aos="fade-up">
-            <div class="flex w-full sm:w-7/12 justify-between" data-aos="fade-up">
+            <div class="flex w-full sm:w-7/12 justify-between">
                 <div class="w-1/3">
                     <img src="img/Logo Saestu-01 1 (1).png" class="w-2/3" alt="">
                 </div>
                 <div class="w-1/3">
                     <p class="text-[14px] font-medium text-blue-700 mb-1">Discover</p>
                     <ul>
-                        <li><a href="./index.html" class="text-[12px] sm:text-[14px]  ">Home</a></li>
-                        <li><a href="./about-us.html" class="text-[12px] sm:text-[14px] ">About Us</a></li>
-                        <li><a href="./project.html" class="text-[12px] sm:text-[14px] ">Project</a></li>
-                        <li><a href="./services.html" class="text-[12px] sm:text-[14px] ">Service</a></li>
-                        <li><a href="./lets-talk.html" class="text-[12px] sm:text-[14px] ">Let's Talk</a></li>
+                        <li><a href="./index.html" class="text-[14px]">Home</a></li>
+                        <li><a href="./about-us.html" class="text-[14px]">About Us</a></li>
+                        <li><a href="./project.html" class="text-[14px]">Project</a></li>
+                        <li><a href="./services.html" class="text-[14px]">Service</a></li>
+                        <li><a href="./lets-talk.html" class="text-[14px]">Let's Talk</a></li>
                     </ul>
                 </div>
                 <div class="w-1/3">
                     <p class="text-[14px] font-medium text-blue-700 mb-1">Contact</p>
                     <ul>
-                        <li><a href="" class="text-[12px] sm:text-[14px] ">+62 81390390302</a></li>
-                        <li><a href="" class="text-[12px] sm:text-[14px] ">+62 82241894119</a></li>
-                        <li><a href="" class="text-[12px] sm:text-[14px] ">halosaestu@gmail.com</a></li>
+                        <li><a href="" class="text-[14px]">+62 81390390302</a></li>
+                        <li><a href="" class="text-[14px]">+62 82241894119</a></li>
+                        <li><a href="" class="text-[12px]">halosaestu@gmail.com</a></li>
                     </ul>
                 </div>
             </div>
@@ -234,7 +277,7 @@
                         <p class="text-[14px] font-medium mt-1">HO Jogja :</p>
                         <p class="text-[14px]">Jl. Lempongsari Raya No.144-89, Randuguang, Sariharjo, Ngaglik, Sleman,
                             Daerah Istimewa Yogyakarta 55581</p>
-                        <p class="text-[14px] font-medium mt-1">HO Jakarta :</p>
+                        <p class="text-[14px] font-medium mt-1">RO Jakarta :</p>
                         <p class="text-[14px]">Jl. Mampang Prpt. Raya No.73A, RT.10/RW.2, Tegal Parang, Mampang
                             Prapatan, South Jakarta City, Jakarta 12790</p>
                     </div>
@@ -265,6 +308,48 @@
     <script>
         AOS.init();
     </script>
+    <script>
+        // Ambil elemen dropdown utama dan opsi tambahan
+        const layananSelect = document.getElementById("kebutuhan-layanan");
+        const brandOptions = document.getElementById("brand-options");
+        const digitalOptions = document.getElementById("digital-options");
+        const marketingOptions = document.getElementById("marketing-options");
+        const miceOptions = document.getElementById("mice-options");
+
+        // Fungsi untuk menyembunyikan semua opsi tambahan
+        function hideAllOptions() {
+            brandOptions.style.display = "none";
+            digitalOptions.style.display = "none";
+            marketingOptions.style.display = "none";
+            miceOptions.style.display = "none";
+        }
+
+        // Event listener untuk dropdown utama
+        layananSelect.addEventListener("change", function() {
+            // Sembunyikan semua opsi tambahan
+            hideAllOptions();
+
+            // Tampilkan opsi tambahan berdasarkan pilihan
+            switch (layananSelect.value) {
+                case "Brand Development":
+                    brandOptions.style.display = "block";
+                    break;
+                case "Digital Marketing & Development":
+                    digitalOptions.style.display = "block";
+                    break;
+                case "Communication & Marketing Strategy":
+                    marketingOptions.style.display = "block";
+                    break;
+                case "MICE":
+                    miceOptions.style.display = "block";
+                    break;
+            }
+        });
+
+        // Sembunyikan semua opsi tambahan pada saat halaman dimuat
+        hideAllOptions();
+    </script>
+
 </body>
 
 </html>

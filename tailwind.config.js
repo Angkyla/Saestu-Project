@@ -36,3 +36,17 @@ module.exports = {
     require('flowbite/plugin'),
   ],
 }
+
+module.exports = {
+  content: [
+    './resources/**/*.blade.php',
+    './resources/**/*.js',
+    './resources/**/*.vue',
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [
+    require('@iconify/tailwind'),
+  ],
+}

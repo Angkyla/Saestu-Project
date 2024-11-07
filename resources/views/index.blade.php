@@ -291,16 +291,17 @@
         <div class="flex flex-col min-w-full px-4 sm:px-16 pt-4 mt-20 bg-slate-950" sm: 1data-aos="fade-up">
             <div
                 class="flex flex-col w-full h-[300px] sm:h-[600px] rounded-2xl bg-no-repeat bg-cover p-8 justify-center relative overflow-hidden">
-                <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover rounded-2xl">
+                <video autoplay loop muted playsinline class="z-0 absolute inset-0 w-full h-full object-cover rounded-2xl">
                     <source src="img/vdcamera.mp4" type="video/mp4">
                     Browser Anda tidak mendukung video.
-                </video>
+                </video>                
                 <div class="relative z-10">
                     <p class="text-white text-[24px] sm:text-[60px] sm:leading-[72px] font-semibold">Ultimate Gateway
                         to<br>Every Possibility</p>
                     <p class="text-[10px] sm:text-lg text-white mt-2 sm:mt-8">Saestu – is a creative company based in
                         <br>
-                        Yogyakarta, Indonesia</p>
+                        Yogyakarta, Indonesia
+                    </p>
                     <a href="" class="text-[10px] sm:text-lg text-white mt-4 sm:mt-10"><span class="underline">Learn
                             More</span> ↓</a>
                 </div>
@@ -603,12 +604,13 @@
             <img class="marquee__item" src="./img/Djp Default.png" width="50" height="auto" alt="">
         </div>
 
-        <div class="flex flex-col sm:flex-row w-full h-fit bg-no-repeat bg-cover p-8 justify-center items-center relative overflow-hidden" data-aos="fade-up">
+        <div class="flex flex-col sm:flex-row w-full h-fit bg-no-repeat bg-cover p-8 justify-center items-center relative overflow-hidden"
+            data-aos="fade-up">
             <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover z-0">
                 <source src="img/vdform.mp4" type="video/mp4">
                 Browser Anda tidak mendukung video.
             </video>
-        
+
             <div class="relative z-10 flex flex-col sm:flex-row w-full h-full items-center justify-center p-8">
                 <div class="sm:w-1/2 w-full items-center">
                     <p class="text-[24px] sm:text-[32px] lg:text-[44px] text-white text-center font-bold">
@@ -616,7 +618,7 @@
                     </p>
                     <div class="flex items-center gap-1 pt-4">
                         <a href="#"
-                           class="inline-block w-fit text-[12px] sm:text-lg text-black text-center bg-white border px-2 py-1 mx-auto">
+                            class="inline-block w-fit text-[12px] sm:text-lg text-black text-center bg-white border px-2 py-1 mx-auto">
                             <p class="flex items-center">
                                 Contact Us
                                 <span class="iconify text-xl text-black ml-1" data-icon="ic:round-arrow-outward"></span>
@@ -624,71 +626,119 @@
                         </a>
                     </div>
                 </div>
-        
+
                 <div class="flex w-full sm:flex-col sm:w-1/2 justify-between py-8">
-                    <form action="/submit-form" method="POST" class="max-w-lg mx-auto p-6 bg-transparent relative">
-                        <div class="flex gap-4">
-                            <div class="mb-4">
-                                <label for="nama" class="block mb-2"></label>
+                    <form action="/submit-form" method="POST" class="w-full max-w-lg p-4 text-white rounded-lg ">
+                        <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+                            <div>
                                 <input type="text" id="nama" name="nama" placeholder="Nama"
-                                       class="w-full px-3 py-2 placeholder-white bg-black text-white border border-white rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
-                                       required>
-                            </div>
-        
-                            <div class="mb-4">
-                                <label for="kontak-wa" class="block mb-2"></label>
-                                <input type="tel" id="kontak-wa" name="kontak-wa" pattern="[0-9]{10,15}"
-                                       placeholder="Kontak WA"
-                                       class="w-full px-3 py-2 bg-black text-white placeholder-white border border-white rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
-                                       required>
-                            </div>
-                        </div>
-        
-                        <div class="flex gap-4">
-                            <div class="mb-4">
-                                <label for="email" class="block text-gray-700 font-medium mb-2"></label>
-                                <input type="email" id="email" name="email" placeholder="Email"
-                                       class="w-full px-3 py-2 bg-black text-white placeholder-white border border-white rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
-                                       required>
-                            </div>
-        
-                            <div class="mb-4">
-                                <label for="perusahaan" class="block text-gray-700 font-medium mb-2"></label>
-                                <input type="text" id="perusahaan" name="perusahaan" placeholder="Perusahaan"
-                                       class="w-full px-3 py-2 bg-black text-white placeholder-white border border-white rounded focus:outline-none focus:ring-2 focus:ring-orange-500">
-                            </div>
-                        </div>
-        
-                        <div class="mb-4">
-                            <label for="kebutuhan-layanan" class="block text-gray-700 font-medium mb-2"></label>
-                            <select id="kebutuhan-layanan" name="kebutuhan-layanan"
-                                    class="w-full px-3 py-2 bg-black text-white border-white rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
+                                    class="w-full p-2 text-white bg-slate-950 border-white rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
                                     required>
-                                <option value="" class="text-white">--Pilih Layanan--</option>
-                                <option value="konsultasi">Konsultasi</option>
-                                <option value="pengembangan-website">Pengembangan Website</option>
-                                <option value="digital-marketing">Digital Marketing</option>
-                                <option value="desain-grafis">Desain Grafis</option>
-                            </select>
-                        </div>
-        
-                        <div class="mb-4">
-                            <label for="note" class="block text-gray-700 font-medium mb-2"></label>
-                            <textarea id="note" name="note" rows="4" placeholder="Tambahkan catatan jika diperlukan"
-                                      class="w-full px-3 py-2 bg-black text-white placeholder-white border border-white rounded focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
-                        </div>
-        
-                        <div class="text-center">
-                            <button type="submit"
-                                    class="px-8 lg:px-[196px] py-2 bg-white font-medium rounded hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500">
-                                Kirim
-                            </button>
+                            </div>
+                            <div>
+                                <input type="tel" id="kontak-wa" name="kontak-wa" placeholder="Kontak WA"
+                                    pattern="[0-9]{10,15}"
+                                    class="w-full p-2 text-white bg-slate-950 border-white rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
+                                    required>
+                            </div>
+                            <div>
+                                <input type="email" id="email" name="email" placeholder="Email"
+                                    class="w-full p-2 text-white bg-slate-950 border-white rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
+                                    required>
+                            </div>
+                            <div>
+                                <input type="text" id="perusahaan" name="perusahaan" placeholder="Perusahaan"
+                                    class="w-full p-2 text-white bg-slate-950 border-white rounded focus:outline-none focus:ring-2 focus:ring-orange-500">
+                            </div>
+                            <div class="col-span-1 md:col-span-2">
+                                <select id="kebutuhan-layanan" name="kebutuhan-layanan"
+                                    class="w-full p-2 text-white bg-slate-950 border-white rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
+                                    required>
+                                    <option value="">--Pilih Layanan--</option>
+                                    <option value="Brand Development">Brand Development</option>
+                                    <option value="Digital Marketing & Development">Digital Marketing & Development
+                                    </option>
+                                    <option value="Communication & Marketing Strategy">Communication & Marketing
+                                        Strategy
+                                    </option>
+                                    <option value="MICE">MICE</option>
+                                </select>
+                            </div>
+
+                            <!-- Opsi tambahan untuk Brand Development -->
+                            <div class="col-span-1 md:col-span-2" id="brand-options" style="display: none;">
+                                <select id="brand-options-select" name="brand-options"
+                                    class="w-full p-2 text-white bg-slate-950 border-white rounded focus:outline-none focus:ring-2 focus:ring-orange-500">
+                                    <option value="">--Pilih Opsi--</option>
+                                    <option value="Brand Srategy">Brand Srategy</option>
+                                    <option value="Brand Identity">Brand Identity</option>
+                                    <option value="Brand Collaterals">Brand Collaterals</option>
+                                    <option value="Brand Guideline">Brand Guideline</option>
+                                    <option value="Brand Naming">Brand Naming</option>
+                                    <option value="Print & Packaging">Print & Packaging</option>
+                                </select>
+                            </div>
+
+                            <!-- Opsi tambahan untuk Digital Marketing & Development -->
+                            <div class="col-span-1 md:col-span-2" id="digital-options" style="display: none;">
+                                <select id="digital-options-select" name="digital-options"
+                                    class="w-full p-2 text-white bg-slate-950 border-white rounded focus:outline-none focus:ring-2 focus:ring-orange-500">
+                                    <option value="">--Pilih Opsi--</option>
+                                    <option value="SEO & SEM">SEO & SEM</option>
+                                    <option value="Sosial Media">Sosial Media</option>
+                                    <option value="Management">Management</option>
+                                    <option value="Influencer/KOL">Influencer / KOL</option>
+                                    <option value="Social Media Ads">Social Media Ads</option>
+                                    <option value="Digital Campaign">Digital Campaign</option>
+                                    <option value="Content">Content</option>
+                                    <option value="Creation/Production">Creation/Production</option>
+                                </select>
+                            </div>
+
+                            <!-- Opsi tambahan untuk Communication & Marketing Strategy -->
+                            <div class="col-span-1 md:col-span-2" id="marketing-options" style="display: none;">
+                                <select id="marketing-options-select" name="marketing-options"
+                                    class="w-full p-2 text-white bg-slate-950 border-white rounded focus:outline-none focus:ring-2 focus:ring-orange-500">
+                                    <option value="">--Pilih Opsi--</option>
+                                    <option value="Brand Activation">Brand Activation</option>
+                                    <option value="Statagic Planning">Statagic Planning</option>
+                                    <option value="Live Streaming/Broadcastig">Live Streaming / Broadcastig</option>
+                                    <option value="TV Ads, Print, Radio">TV Ads, Print, Radio</option>
+                                    <option value="Marketing Campaign">Marketing Campaign</option>
+                                    <option value="Strategic Copywriting">Strategic Copywriting</option>
+                                    <option value="Online / Offine / Hybrid Event">Online / Offine / Hybrid Event</option>
+                                    <option value="Planning">Planning</option>
+                                </select>
+                            </div>
+
+                            <!-- Opsi tambahan untuk MICE -->
+                            <div class="col-span-1 md:col-span-2" id="mice-options" style="display: none;">
+                                <select id="mice-options-select" name="mice-options"
+                                    class="w-full p-2 text-white bg-slate-950 border-white rounded focus:outline-none focus:ring-2 focus:ring-orange-500">
+                                    <option value="">--Pilih Opsi--</option>
+                                    <option value="Meeting">Meeting</option>
+                                    <option value="Seminar">Seminar</option>
+                                    <option value="Workshop">Workshop</option>
+                                    <option value="Gathering">Gathering</option>
+                                    <option value="Gala Dinner">Gala Dinner</option>
+                                    <option value="Exhibition">Exhibition</option>
+                                </select>
+                            </div>
+
+                            <div class="col-span-1 md:col-span-2">
+                                <textarea id="note" name="note" rows="4" placeholder="Tambahkan catatan jika diperlukan"
+                                    class="w-full p-2 text-white bg-slate-950 border-white rounded focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
+                            </div>
+                            <div class="col-span-1 md:col-span-2">
+                                <button type="submit"
+                                    class="w-full p-2 font-semibold text-black bg-white rounded hover:bg-orange-500">Kirim</button>
+                            </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-        
+
         <div class="flex min-w-full h-8 bg-blue-800 sm:hidden"></div>
 
         <!-- Content -->
@@ -703,11 +753,11 @@
                 <div class="w-1/3">
                     <p class="text-[14px] font-medium text-blue-700 mb-1">Discover</p>
                     <ul>
-                        <li><a href="./index.html" class="text-[14px]">Home</a></li>
-                        <li><a href="./about-us.html" class="text-[14px]">About Us</a></li>
-                        <li><a href="./project.html" class="text-[14px]">Project</a></li>
-                        <li><a href="./services.html" class="text-[14px]">Service</a></li>
-                        <li><a href="./lets-talk.html" class="text-[14px]">Let's Talk</a></li>
+                        <li><a href="/index" class="text-[14px]">Home</a></li>
+                        <li><a href="/about-us" class="text-[14px]">About Us</a></li>
+                        <li><a href="/project" class="text-[14px]">Project</a></li>
+                        <li><a href="/services" class="text-[14px]">Service</a></li>
+                        <li><a href="/lets-talk" class="text-[14px]">Let's Talk</a></li>
                     </ul>
                 </div>
                 <div class="w-1/3">
@@ -734,7 +784,7 @@
                         <p class="text-[14px] font-medium mt-1">HO Jogja :</p>
                         <p class="text-[14px]">Jl. Lempongsari Raya No.144-89, Randuguang, Sariharjo, Ngaglik, Sleman,
                             Daerah Istimewa Yogyakarta 55581</p>
-                        <p class="text-[14px] font-medium mt-1">HO Jakarta :</p>
+                        <p class="text-[14px] font-medium mt-1">RO Jakarta :</p>
                         <p class="text-[14px]">Jl. Mampang Prpt. Raya No.73A, RT.10/RW.2, Tegal Parang, Mampang
                             Prapatan, South Jakarta City, Jakarta 12790</p>
                     </div>
@@ -743,12 +793,12 @@
             <div class="flex w-full h-0.5 bg-slate-950 mt-3"></div>
             <div class="flex w-full">
                 <div class="w-1/2 flex gap-2">
-                    <a href="">
+                    <a href="https://www.instagram.com/saestu.creative?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                         <span class="icon-[ph--instagram-logo] sm:text-xl"></span>
                     </a>
                     <a href="">
                         <span class="icon-[mdi--linkedin] sm:text-xl"></span>
-                    </a>
+                    </a>                    
                     <a href="">
                         <span class="icon-[mdi--download] sm:text-xl"></span>
                     </a>
@@ -839,6 +889,48 @@
                 });
             });
         }
+    </script>
+
+    <script>
+        // Ambil elemen dropdown utama dan opsi tambahan
+        const layananSelect = document.getElementById("kebutuhan-layanan");
+        const brandOptions = document.getElementById("brand-options");
+        const digitalOptions = document.getElementById("digital-options");
+        const marketingOptions = document.getElementById("marketing-options");
+        const miceOptions = document.getElementById("mice-options");
+
+        // Fungsi untuk menyembunyikan semua opsi tambahan
+        function hideAllOptions() {
+            brandOptions.style.display = "none";
+            digitalOptions.style.display = "none";
+            marketingOptions.style.display = "none";
+            miceOptions.style.display = "none";
+        }
+
+        // Event listener untuk dropdown utama
+        layananSelect.addEventListener("change", function () {
+            // Sembunyikan semua opsi tambahan
+            hideAllOptions();
+
+            // Tampilkan opsi tambahan berdasarkan pilihan
+            switch (layananSelect.value) {
+                case "Brand Development":
+                    brandOptions.style.display = "block";
+                    break;
+                case "Digital Marketing & Development":
+                    digitalOptions.style.display = "block";
+                    break;
+                case "Communication & Marketing Strategy":
+                    marketingOptions.style.display = "block";
+                    break;
+                case "MICE":
+                    miceOptions.style.display = "block";
+                    break;
+            }
+        });
+
+        // Sembunyikan semua opsi tambahan pada saat halaman dimuat
+        hideAllOptions();
     </script>
 
 

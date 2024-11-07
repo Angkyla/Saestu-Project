@@ -135,11 +135,13 @@
             <!-- Carousel Controls (Category Tabs) -->
             <div class="carousel-controls w-full flex flex-wrap justify-center gap-4 mb-4 text-[12px] sm:text-[16px]">
                 <button onclick="showSlide(0)" class="carousel-label text-black font-semibold">All Categories</button>
-                <button onclick="showSlide(1)" class="carousel-label text-black font-semibold">Brand Activation</button>
-                <button onclick="showSlide(2)" class="carousel-label text-black font-semibold">Mice</button>
-                <button onclick="showSlide(3)" class="carousel-label text-black font-semibold">Booth Production</button>
-                <button onclick="showSlide(4)" class="carousel-label text-black font-semibold">Kol Management</button>
-                <button onclick="showSlide(5)" class="carousel-label text-black font-semibold">Gatering</button>
+                <button onclick="showSlide(1)" class="carousel-label text-black font-semibold">Brand
+                    Development</button>
+                <button onclick="showSlide(2)" class="carousel-label text-black font-semibold">Digital Marketing &
+                    Development</button>
+                <button onclick="showSlide(3)" class="carousel-label text-black font-semibold">Communication & Marketing
+                    Strategy</button>
+                <button onclick="showSlide(4)" class="carousel-label text-black font-semibold">MICE</button>
             </div>
 
             <!-- Carousel Slides -->
@@ -322,6 +324,46 @@
                 <div class="carousel-item">
                     <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
                         <div class="flex flex-col justify-between h-72 sm:h-96 bg-cover bg-center rounded-2xl p-4 text-white shadow-lg transition-transform transform hover:scale-105"
+                            style="background-image: url('img/baygon.jpg');">
+                            <div class="flex justify-between items-center">
+                                <p class="text-sm font-medium">Booth Production</p>
+                                <a href="https://www.instagram.com/saestu.creative?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                                    target="_blank">
+                                    <span class="icon-[ph--arrow-circle-up-right] text-3xl"></span>
+                                </a>
+                            </div>
+                            <div>
+                                <p class="font-medium text-lg">Home Care Fair</p>
+                                <p class="text-sm font-medium">Baygon</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                        <div class="flex flex-col justify-between h-72 sm:h-96 bg-cover bg-center rounded-2xl p-4 text-white shadow-lg transition-transform transform hover:scale-105"
+                            style="background-image: url('img/kolgrab.jpg');">
+                            <div class="flex justify-between items-center">
+                                <p class="text-sm font-medium">KOL Management</p>
+                                <a href="https://www.instagram.com/p/DBQlJUJPL_i/?igsh=Mjloczh3c3U4b3Z4"
+                                    target="_blank">
+                                    <span class="icon-[ph--arrow-circle-up-right] text-3xl"></span>
+                                </a>
+                            </div>
+                            <div>
+                                <p class="font-medium text-lg">Bigbag At Mall</p>
+                                <p class="text-sm font-medium">Grab</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="carousel-item">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                        <div class="flex flex-col justify-between h-72 sm:h-96 bg-cover bg-center rounded-2xl p-4 text-white shadow-lg transition-transform transform hover:scale-105"
                             style="background-image: url('img/KIWI.jpg');">
                             <div class="flex justify-between items-center">
                                 <p class="text-sm font-medium">Brand Activation</p>
@@ -366,7 +408,7 @@
                     </div>
                 </div>
 
-                <!-- Slide 3 -->
+                <!-- Slide 5 -->
                 <div class="carousel-item">
                     <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
                         <div class="flex flex-col justify-between h-72 sm:h-96 bg-cover bg-center rounded-2xl p-4 text-white shadow-lg transition-transform transform hover:scale-105"
@@ -439,52 +481,6 @@
                                 <p class="text-sm font-medium">Gudang Garam Merah</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Slide 4 -->
-                <div class="carousel-item">
-                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                        <div class="flex flex-col justify-between h-72 sm:h-96 bg-cover bg-center rounded-2xl p-4 text-white shadow-lg transition-transform transform hover:scale-105"
-                            style="background-image: url('img/baygon.jpg');">
-                            <div class="flex justify-between items-center">
-                                <p class="text-sm font-medium">Booth Production</p>
-                                <a href="https://www.instagram.com/saestu.creative?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                                    target="_blank">
-                                    <span class="icon-[ph--arrow-circle-up-right] text-3xl"></span>
-                                </a>
-                            </div>
-                            <div>
-                                <p class="font-medium text-lg">Home Care Fair</p>
-                                <p class="text-sm font-medium">Baygon</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 5 -->
-                <div class="carousel-item">
-                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                        <div class="flex flex-col justify-between h-72 sm:h-96 bg-cover bg-center rounded-2xl p-4 text-white shadow-lg transition-transform transform hover:scale-105"
-                            style="background-image: url('img/kolgrab.jpg');">
-                            <div class="flex justify-between items-center">
-                                <p class="text-sm font-medium">KOL Management</p>
-                                <a href="https://www.instagram.com/p/DBQlJUJPL_i/?igsh=Mjloczh3c3U4b3Z4"
-                                    target="_blank">
-                                    <span class="icon-[ph--arrow-circle-up-right] text-3xl"></span>
-                                </a>
-                            </div>
-                            <div>
-                                <p class="font-medium text-lg">Bigbag At Mall</p>
-                                <p class="text-sm font-medium">Grab</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 6 -->
-                <div class="carousel-item">
-                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
                         <div class="flex flex-col justify-between h-72 sm:h-96 bg-cover bg-center rounded-2xl p-4 text-white shadow-lg transition-transform transform hover:scale-105"
                             style="background-image: url('img/gudanggaram.jpg');">
                             <div class="flex justify-between items-center">
@@ -515,13 +511,15 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
 
         <div style="background-image: url(img/anbwh.gif);"
             class="flex flex-col w-full h-[300px] sm:h-[600px] bg-no-repeat bg-cover p-8 justify-center items-center"
             data-aos="fade-up">
-            <p class="text-[24px] sm:text-[44px] text-white mt-2 sm:mt-8 text-center font-bold">Join us in bringing your
+            <p class="text-[24px] sm:text-[44px] text-white mt-2 sm:mt-8 text-center font-bold">Join us in bringing
+                your
                 brand's story to life with precision and passion.</p>
             <a href="#"
                 class="inline-block w-fit text-[12px] sm:text-lg text-black text-center bg-white border px-2 py-1">
@@ -535,7 +533,8 @@
         <!-- Content -->
 
         <!-- Footer -->
-        <div class="flex flex-col sm:flex-row sm:flex-wrap gap-y-4 min-w-full p-4 sm:px-16 bg-neutral-200">
+        <div class="flex flex-col sm:flex-row sm:flex-wrap gap-y-4 min-w-full p-4 sm:px-16 bg-neutral-200"
+            data-aos="fade-up">
             <div class="flex w-full sm:w-7/12 justify-between">
                 <div class="w-1/3">
                     <img src="img/Logo Saestu-01 1 (1).png" class="w-2/3" alt="">
@@ -555,7 +554,7 @@
                     <ul>
                         <li><a href="" class="text-[14px]">+62 81390390302</a></li>
                         <li><a href="" class="text-[14px]">+62 82241894119</a></li>
-                        <li><a href="" class="text-[14px]">halosaestu@gmail.com</a></li>
+                        <li><a href="" class="text-[12px]">halosaestu@gmail.com</a></li>
                     </ul>
                 </div>
             </div>
@@ -574,7 +573,7 @@
                         <p class="text-[14px] font-medium mt-1">HO Jogja :</p>
                         <p class="text-[14px]">Jl. Lempongsari Raya No.144-89, Randuguang, Sariharjo, Ngaglik, Sleman,
                             Daerah Istimewa Yogyakarta 55581</p>
-                        <p class="text-[14px] font-medium mt-1">HO Jakarta :</p>
+                        <p class="text-[14px] font-medium mt-1">RO Jakarta :</p>
                         <p class="text-[14px]">Jl. Mampang Prpt. Raya No.73A, RT.10/RW.2, Tegal Parang, Mampang
                             Prapatan, South Jakarta City, Jakarta 12790</p>
                     </div>
